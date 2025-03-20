@@ -28,7 +28,7 @@ def merge(left,right):
             result.append(right[j])
             j +=1
 
-    #We add first the left[i:] because we know that there are bigger numbers than result and smaller numbers from right[j:]
+    #We add first the left[i:] because we know that they are bigger numbers than the result and smaller numbers from the right[j:]
     result.extend(left[i:])
     result.extend(right[j:])
     return result
